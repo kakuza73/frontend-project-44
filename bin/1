@@ -1,0 +1,43 @@
+import readlineSync from 'readline-sync';
+
+const isPrime = (num) => {
+if (num < 2) {
+return false;
+}
+for (let i = 2; i <= Math.sqrt(num); i++) {
+if (num % i === 0) {
+return false;
+}
+}
+return true;
+};
+
+const brainPrimeGame = () => {
+console.log('Welcome to the Brain Games!');
+const name = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${name}! Answer "yes" if given number is prime. Otherwise answer "no".`);
+
+const roundsCount = 3;
+let correctAnswersCount = 0;
+
+for (let i = 0; i < roundsCount; i++) {
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log(`Question: ${randomNumber}`);
+const answer = readlineSync.question('Your answer: ');
+
+const isCorrectAnswer = isPrime(randomNumber) ? 'yes' : 'no';
+
+if (answer === isCorrectAnswer) {
+console.log('Correct!');
+correctAnswersCount += 1;
+} else {
+console.log(`"${answer}" is wrong answer ;(. Correct answer was "${isCorrectAnswer}".`);
+console.log(`Let's try again, ${name}!`);
+return;
+}
+}
+
+console.log(`Congratulations, ${name}! You have successfully completed the game "Prime or Not?".`);
+};
+
+brainPrimeGame();

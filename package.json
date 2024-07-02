@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/kakuza73/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/kakuza73/frontend-project-44#readme"
+  "homepage": "https://github.com/kakuza73/frontend-project-44#readme",
+  "dependencies": {
+    "package": "^1.0.1",
+    "readline-sync": "^1.4.10"
+  },
+"bin": {
+  "brain-games": "bin/brain-games.js"
+},
+  "type": "module",
+  "devDependencies": {},
+  "keywords": []
 }
