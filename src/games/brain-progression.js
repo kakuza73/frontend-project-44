@@ -1,4 +1,4 @@
-import getRandomFromRange from '../utils.js'
+import getRandomFromRange from '../utils.js';
 import startGame from '../index.js';
 
 const challenge = 'What number is missing in the progression?';

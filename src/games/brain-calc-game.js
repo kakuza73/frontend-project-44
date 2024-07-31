@@ -1,4 +1,4 @@
-import getRandomFromRange from '../utils.js'
+import getRandomFromRange from '../utils.js';
 import startGame from '../index.js';
 
 const operators = ['-', '+', '*'];
@@ -14,8 +14,8 @@ const getCalc = (a, b, operator) => {
       return a * b;
     default:
       throw new Error(`Invalid expression: ${a} ${operator} ${b}`);
-  
   }
+  
 };
 
 const getQuestionAndAnswer = () => {

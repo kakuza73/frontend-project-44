@@ -1,4 +1,4 @@
-import getRandomFromRange from '../utils.js'
+import getRandomFromRange from '../utils.js';
 import starGame from '../index.js';
 
 const challenge = 'Answer "yes" if given number is prime. Otherwise answer "no".';

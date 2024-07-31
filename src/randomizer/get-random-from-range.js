@@ -5,4 +5,4 @@ const getRandomFromRangeOf = (min, max) => {
   return Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
 };
 
-export default getRandomFromRangeOf; 
+export default getRandomFromRangeOf;

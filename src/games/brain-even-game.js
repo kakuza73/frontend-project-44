@@ -1,4 +1,4 @@
-import getRandomFromRange from '../utils.js'
+import getRandomFromRange from '../utils.js';
 import startGame from '../index.js';
 
 const challenge = 'Answer "yes" if the number is even, otherwise answer "no"';

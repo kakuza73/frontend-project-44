@@ -7,4 +7,5 @@ const getUsernameAndSayHello = () => {
 
   return userName;
 };
+
 export default getUsernameAndSayHello;

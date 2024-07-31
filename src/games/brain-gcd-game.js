@@ -1,4 +1,4 @@
-import getRandomFromRange from '../utils.js'
+import getRandomFromRange from '../utils.js';
 import startGame from '../index.js';
 
 const challenge = 'Find the greatest common divisor of given numbers.';
