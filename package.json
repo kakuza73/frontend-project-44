@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/kakuza73/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kakuza73/frontend-project-44/actions)",
+  "description": "A collection of small math games known as Brain Games, focusing on various arithmetic challenges and puzzles.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,6 +29,8 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "type": "module",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "9.8.0"
+  },
   "keywords": []
 }

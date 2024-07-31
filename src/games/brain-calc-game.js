@@ -1,5 +1,4 @@
-import getRandomFromRangeOf from '../randomizer/get-random-from-range.js';
-import getRandomNumber from '../randomizer/get-random.js';
+import getRandomFromRange from '../utils.js'
 import startGame from '../index.js';
 
 const operators = ['-', '+', '*'];
@@ -14,16 +13,17 @@ const getCalc = (a, b, operator) => {
     case '*':
       return a * b;
     default:
-      throw new Error('invalid expression');
+      throw new Error(`Invalid expression: ${a} ${operator} ${b}`);
+  
   }
 };
 
 const getQuestionAndAnswer = () => {
-  const firstValue = getRandomNumber();
-  const secondVavue = getRandomNumber();
-  const operator = operators[getRandomFromRangeOf(0, operators.length - 1)];
-  const question = `${firstValue} ${operator} ${secondVavue}`;
-  const correctAnswer = getCalc(firstValue, secondVavue, operator).toString();
+  const value1 = getRandomFromRange();
+  const value2 = getRandomFromRange();
+  const operator = operators[getRandomFromRange(0, operators.length - 1)];
+  const question = `${value1} ${operator} ${value2}`;
+  const correctAnswer = getCalc(value1, value2, operator).toString();
   return [question, correctAnswer];
 };
 

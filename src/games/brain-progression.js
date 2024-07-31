@@ -1,27 +1,21 @@
-import getRandomNumber from '../randomizer/get-random.js';
-import getRandomFromRangeOf from '../randomizer/get-random-from-range.js';
+import getRandomFromRange from '../utils.js'
 import startGame from '../index.js';
-
-const minProgLength = 5; // minimal length of the progression
-const maxProgLength = 10; // maximum length of the progression
-const minProgStep = 2; // minimal step of the progression
-const maxProgStep = 5; // maximum step of the progression
 
 const challenge = 'What number is missing in the progression?';
 
 const getProgression = (length, step) => {
   const result = [];
-  for (let i = getRandomNumber(); result.length < length; i += step) {
+  for (let i = getRandomFromRange(); result.length < length; i += step) {
     result.push(i);
   }
   return result;
 };
 
 const getQuestionAndAnswer = () => {
-  const progLength = getRandomFromRangeOf(minProgLength, maxProgLength);
-  const progStep = getRandomFromRangeOf(minProgStep, maxProgStep);
-  const progression = getProgression(progLength, progStep);
-  const hiddenValueIndex = getRandomFromRangeOf(0, progression.length - 1);
+  const length = getRandomFromRange(5, 10);
+  const step = getRandomFromRange(2, 5);
+  const progression = getProgression(length, step);
+  const hiddenValueIndex = getRandomFromRange(0, progression.length - 1);
   const correctAnswer = progression[hiddenValueIndex].toString();
   progression[hiddenValueIndex] = '..';
   const question = progression.join(' ');
