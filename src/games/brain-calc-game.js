@@ -15,7 +15,6 @@ const getCalc = (a, b, operator) => {
     default:
       throw new Error(`Invalid expression: ${a} ${operator} ${b}`);
   }
-  
 };
 
 const getQuestionAndAnswer = () => {
