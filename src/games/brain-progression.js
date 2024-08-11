@@ -19,7 +19,7 @@ const generateNumbers = (min, max, count) => {
 };
 
 const getGameData = () => {
-  const [length, step] = generateNumbers(5, 10, 2); 
+  const [length, step] = generateNumbers(5, 10, 2);
   const progressionStart = generateNumbers(1, 100, 1)[0];
   const progression = getProgression(progressionStart, step, length);
   const hiddenValueIndex = Math.floor(Math.random() * progression.length);
