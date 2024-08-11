@@ -8,7 +8,7 @@ const getGCD = (x, y) => {
   return getGCD(y, x % y);
 };
 
-const getQuestionAndAnswer = () => {
+const getGameData = () => {
   const value1 = getRandomFromRange();
   const value2 = getRandomFromRange();
   const question = `${value1} ${value2}`;
@@ -16,4 +16,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => startGame(getQuestionAndAnswer, challenge);
+export default () => startGame(getGameData, challenge);

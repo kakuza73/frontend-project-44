@@ -17,7 +17,7 @@ const getCalc = (a, b, operator) => {
   }
 };
 
-const getQuestionAndAnswer = () => {
+const getGameData = () => {
   const value1 = getRandomFromRange();
   const value2 = getRandomFromRange();
   const operator = operators[getRandomFromRange(0, operators.length - 1)];
@@ -26,4 +26,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => startGame(getQuestionAndAnswer, challenge);
+export default () => startGame(getGameData, challenge);

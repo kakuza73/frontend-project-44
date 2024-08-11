@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/kakuza73/frontend-project-44.git"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,7 +23,7 @@
     "package": "^1.0.1",
     "readline-sync": "^1.4.10"
   },
-"bin": {
+  "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
@@ -30,7 +33,11 @@
   },
   "type": "module",
   "devDependencies": {
-    "eslint": "9.8.0"
+    "@eslint/js": "^8.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "globals": "^13.0.0"
   },
   "keywords": []
 }
