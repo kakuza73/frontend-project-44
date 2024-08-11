@@ -4,15 +4,15 @@ const challenge = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length) => {
   const result = [];
-  for (let i = start; result.length < length; i += step) {
-    result.push(i);
+  for (let i = 0; i < length; i += 1) {
+    result.push(start + i * step);
   }
   return result;
 };
 
 const generateNumbers = (min, max, count) => {
   const numbers = [];
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < count; i += 1) {
     numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
   }
   return numbers;

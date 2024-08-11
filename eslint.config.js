@@ -1,5 +1,3 @@
-const globals = require('globals');
-
 module.exports = {
   env: {
     browser: true,
@@ -14,15 +12,15 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'no-console': 'off',
-    'no-var': 'error',
-    'prefer-const': 'error',
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-    'quotes': ['error', 'single'],
-    'semi': ['error', 'always'],
-    'indent': ['error', 2],
-    'comma-dangle': ['error', 'always-multiline'],
-    'arrow-body-style': ['error', 'as-needed'],
-    'eqeqeq': ['error', 'always'],
+    noConsole: 'off',
+    noVar: 'error',
+    preferConst: 'error',
+    noUnusedVars: ['error', { argsIgnorePattern: '^_' }],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+    indent: ['error', 2],
+    commaDangle: ['error', 'always-multiline'],
+    arrowBodyStyle: ['error', 'as-needed'],
+    eqeqeq: ['error', 'always'],
   },
 };
