@@ -15,9 +15,7 @@ To play "Brain Games," ensure your computer meets the following minimum specific
 
 **Min specs**:
 
-> **Node.js v20.11.0.**
-
-> **Windows 10 with WSL** or **macOS 10.15+** or **any current linux distributive**.
+> **Node.js v13.2.0 or later.**
 
 #### Installing instructions:
 
@@ -50,7 +48,7 @@ This game requires you to solve simple math problems, including addition, subtra
 
 
 
-[![asciicast](https://asciinema.org/a/VTd9LRLloHos7vLLDyLN0uv4e.svg)](https://asciinema.org/a/VTd9LRLloHos7vLLDyLN0uv4e)
+[![asciicast](https://asciinema.org/a/hCzOT8z6KXIPBDmKyMIJuEeEp.svg)](https://asciinema.org/a/hCzOT8z6KXIPBDmKyMIJuEeEp)
 
 ---
 
@@ -59,7 +57,7 @@ This game requires you to solve simple math problems, including addition, subtra
 In this game, you need to determine whether each of three random numbers is even.
 
 
-[![asciicast](https://asciinema.org/a/GUc9YMRbVGqccPhcxIrfPS0P7.svg)](https://asciinema.org/a/GUc9YMRbVGqccPhcxIrfPS0P7)
+[![asciicast](https://asciinema.org/a/hCzOT8z6KXIPBDmKyMIJuEeEp.svg)](https://asciinema.org/a/hCzOT8z6KXIPBDmKyMIJuEeEp)
 
 ---
 
@@ -68,7 +66,7 @@ In this game, you need to determine whether each of three random numbers is even
 Identify the greatest common divisor of two given numbers.
 
 
-[![asciicast](https://asciinema.org/a/wy5iiNcp6tWb267YcygAA87z5.svg)](https://asciinema.org/a/wy5iiNcp6tWb267YcygAA87z5)
+[![asciicast](https://asciinema.org/a/yOuLNUDzdIzPIkk9wAuLfCOPn.svg)](https://asciinema.org/a/yOuLNUDzdIzPIkk9wAuLfCOPn)
 
 ---
 
@@ -77,7 +75,7 @@ Identify the greatest common divisor of two given numbers.
 Determine whether a given number is a prime number. Numbers are chosen randomly.
 
 
-[![asciicast](https://asciinema.org/a/EsxSeP42SLLBfg7iNHztboWov.svg)](https://asciinema.org/a/EsxSeP42SLLBfg7iNHztboWov)
+[![asciicast](https://asciinema.org/a/7Rrf1SCMz9z3RrIBVWxVjlPcT.svg)](https://asciinema.org/a/7Rrf1SCMz9z3RrIBVWxVjlPcT)
 
 ---
 
@@ -86,6 +84,6 @@ Determine whether a given number is a prime number. Numbers are chosen randomly.
 You will be shown a series of numbers forming an arithmetic progression. One number in the series will be replaced by two dots. Your task is to identify the missing number.
 
 
-[![asciicast](https://asciinema.org/a/dNQoy7XGMOQ0g2C7MzoGxktez.svg)](https://asciinema.org/a/dNQoy7XGMOQ0g2C7MzoGxktez)
+[![asciicast](https://asciinema.org/a/7mv3pq32VNvqFukm7cqgIPR5x.svg)](https://asciinema.org/a/7mv3pq32VNvqFukm7cqgIPR5x)
 
 ---

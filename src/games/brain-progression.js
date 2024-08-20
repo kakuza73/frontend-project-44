@@ -3,29 +3,26 @@ import startGame from '../index.js';
 const challenge = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length) => {
-  const result = [];
+  const progression = [];
   for (let i = 0; i < length; i += 1) {
-    result.push(start + i * step);
+    progression.push(start + i * step);
   }
-  return result;
+  return progression;
 };
 
-const generateNumbers = (min, max, count) => {
-  const numbers = [];
-  for (let i = 0; i < count; i += 1) {
-    numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
-  }
-  return numbers;
-};
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const getGameData = () => {
-  const [length, step] = generateNumbers(5, 10, 2);
-  const progressionStart = generateNumbers(1, 100, 1)[0];
-  const progression = getProgression(progressionStart, step, length);
-  const hiddenValueIndex = Math.floor(Math.random() * progression.length);
+  const length = getRandomNumber(5, 10);
+  const step = getRandomNumber(5, 10);
+  const start = getRandomNumber(1, 100);
+
+  const progression = getProgression(start, step, length);
+  const hiddenValueIndex = getRandomNumber(0, length - 1);
   const correctAnswer = progression[hiddenValueIndex].toString();
   progression[hiddenValueIndex] = '..';
   const question = progression.join(' ');
+
   return [question, correctAnswer];
 };
 
