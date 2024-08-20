@@ -4,8 +4,8 @@ import startGame from '../index.js';
 const challengeDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  const maxDivisor  = Math.sqrt(number);
-  for (let divisor = 2; divisor <= maxDivisor ; divisor += 1) {
+  const maxDivisor = Math.sqrt(number);
+  for (let divisor = 2; divisor <= maxDivisor; divisor += 1) {
     if (number % divisor === 0) return false;
   }
   return number > 1;
